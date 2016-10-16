@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tql-rs-g1X">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,25 +19,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                                <frame key="frameInset" minX="90" minY="325" width="195" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.48627450979999998" green="0.70196078429999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -201,12 +191,42 @@
                     <view key="view" contentMode="scaleToFill" id="2K0-hJ-5KK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="sw8-5a-ced">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sw8-5a-ced" secondAttribute="height" multiplier="1:1" id="WVE-05-NJ6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="daq-1B-vfx">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="daq-1B-vfx" secondAttribute="height" multiplier="263:180" id="5EU-9v-XH6"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">«Safe forest» application is intended for those who like traveling, fishing, hunting - thoughtful and courageous people willing to lend a helping hand to the nature of the Russian Far East.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="daq-1B-vfx" firstAttribute="leading" secondItem="2K0-hJ-5KK" secondAttribute="leadingMargin" constant="20" id="8Gu-oH-3eE"/>
+                            <constraint firstItem="sw8-5a-ced" firstAttribute="leading" secondItem="2K0-hJ-5KK" secondAttribute="leadingMargin" constant="40" id="Ae6-vl-zbN"/>
+                            <constraint firstItem="daq-1B-vfx" firstAttribute="top" secondItem="sw8-5a-ced" secondAttribute="bottom" constant="20" id="flR-xi-cox"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sw8-5a-ced" secondAttribute="trailing" constant="40" id="iCz-n8-kOH"/>
+                            <constraint firstItem="sw8-5a-ced" firstAttribute="top" secondItem="PAd-wX-8oV" secondAttribute="bottom" constant="20" id="myQ-Eg-maG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="daq-1B-vfx" secondAttribute="trailing" constant="20" id="qwS-a0-2d0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txT-FQ-FBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2078" y="1316"/>
+            <point key="canvasLocation" x="-2079.1999999999998" y="1315.5922038980511"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vlT-Ct-xV9">
@@ -237,7 +257,37 @@
                     <view key="view" contentMode="scaleToFill" id="Dg1-nL-nZT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro" translatesAutoresizingMaskIntoConstraints="NO" id="uxN-PE-BwF">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uxN-PE-BwF" secondAttribute="height" multiplier="1:1" id="Vcm-eA-2Me"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po1-Xk-TPQ">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="po1-Xk-TPQ" secondAttribute="height" multiplier="263:180" id="dOw-8n-KjY"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">If you see a fire in the forest, illegal felling or illegal dumps, send a message. Supervisors of the Forestry Department and LesAviaOhrana will receive your message.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="uxN-PE-BwF" secondAttribute="trailing" constant="40" id="UrJ-CS-yeC"/>
+                            <constraint firstItem="po1-Xk-TPQ" firstAttribute="leading" secondItem="Dg1-nL-nZT" secondAttribute="leadingMargin" constant="20" id="VDg-NX-zQi"/>
+                            <constraint firstItem="po1-Xk-TPQ" firstAttribute="top" secondItem="uxN-PE-BwF" secondAttribute="bottom" constant="20" id="dPr-x5-rmt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="po1-Xk-TPQ" secondAttribute="trailing" constant="20" id="h1L-4g-LYa"/>
+                            <constraint firstItem="uxN-PE-BwF" firstAttribute="top" secondItem="qzh-lD-541" secondAttribute="bottom" constant="20" id="kbx-hx-gFM"/>
+                            <constraint firstItem="uxN-PE-BwF" firstAttribute="leading" secondItem="Dg1-nL-nZT" secondAttribute="leadingMargin" constant="40" id="rfL-AK-fm7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2u-dh-I9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,7 +305,37 @@
                     <view key="view" contentMode="scaleToFill" id="EXD-Ho-7FE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="5sZ-4b-gPn">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5sZ-4b-gPn" secondAttribute="height" multiplier="1:1" id="zg7-Pf-FT6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xek-fv-ffv">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xek-fv-ffv" secondAttribute="height" multiplier="263:180" id="kgt-2h-8O9"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Forest Rangers will go to extinguish the fire, detain forest poachers or look for culprits landfill. As soon as the measures to be taken, you will be immediately notified about it.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xek-fv-ffv" firstAttribute="leading" secondItem="EXD-Ho-7FE" secondAttribute="leadingMargin" constant="20" id="HZt-PN-rKl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xek-fv-ffv" secondAttribute="trailing" constant="20" id="R5O-cD-bd8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5sZ-4b-gPn" secondAttribute="trailing" constant="40" id="Yum-Eb-MIg"/>
+                            <constraint firstItem="5sZ-4b-gPn" firstAttribute="leading" secondItem="EXD-Ho-7FE" secondAttribute="leadingMargin" constant="40" id="bS6-7F-v4M"/>
+                            <constraint firstItem="xek-fv-ffv" firstAttribute="top" secondItem="5sZ-4b-gPn" secondAttribute="bottom" constant="20" id="eqZ-us-AyC"/>
+                            <constraint firstItem="5sZ-4b-gPn" firstAttribute="top" secondItem="Kvw-Kf-5Rl" secondAttribute="bottom" constant="20" id="uYa-Zk-0ca"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmU-Oo-Ben" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -273,7 +353,37 @@
                     <view key="view" contentMode="scaleToFill" id="Ms9-fw-A5p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wwf" translatesAutoresizingMaskIntoConstraints="NO" id="7Zv-sv-Ib6">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Zv-sv-Ib6" secondAttribute="height" multiplier="1:1" id="K31-g3-Czv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiE-7S-w6a">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TiE-7S-w6a" secondAttribute="height" multiplier="263:180" id="Gcy-yO-KnW"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">This app is created by the World Wide Fund for Nature - WWF Russia, which protects environment of the Far East. If you are interested, you are willing to help, please visit us: taigastory.ru</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Zv-sv-Ib6" secondAttribute="trailing" constant="40" id="96g-nZ-Chr"/>
+                            <constraint firstItem="TiE-7S-w6a" firstAttribute="leading" secondItem="Ms9-fw-A5p" secondAttribute="leadingMargin" constant="20" id="E7r-Uz-9IB"/>
+                            <constraint firstItem="7Zv-sv-Ib6" firstAttribute="leading" secondItem="Ms9-fw-A5p" secondAttribute="leadingMargin" constant="40" id="YFO-jN-a3l"/>
+                            <constraint firstItem="TiE-7S-w6a" firstAttribute="top" secondItem="7Zv-sv-Ib6" secondAttribute="bottom" constant="20" id="ZUe-gG-w4K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TiE-7S-w6a" secondAttribute="trailing" constant="20" id="xw5-th-r18"/>
+                            <constraint firstItem="7Zv-sv-Ib6" firstAttribute="top" secondItem="Qkd-SO-4Ca" secondAttribute="bottom" constant="20" id="yxX-u1-8yy"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fcw-H9-KrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -281,5 +391,11 @@
             <point key="canvasLocation" x="-162" y="1316"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="intro" width="480" height="480"/>
+        <image name="logo" width="480" height="480"/>
+        <image name="phone" width="480" height="480"/>
+        <image name="wwf" width="263" height="390"/>
+    </resources>
     <color key="tintColor" red="0.48627450979999998" green="0.70196078429999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
 </document>
