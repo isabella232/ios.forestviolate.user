@@ -1,6 +1,12 @@
+/* Begin using */
+"Begin" = "Приступить";
+
 /* List segment name */
 "List" = "Список";
 
 /* Map segment name */
 "Map" = "Карта";
+
+/* Skip intro */
+"Skip" = "Пропустить";
 

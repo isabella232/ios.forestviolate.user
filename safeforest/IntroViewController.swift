@@ -10,7 +10,10 @@ import UIKit
 import BWWalkthrough
 
 class IntroViewController: UIViewController, BWWalkthroughViewControllerDelegate {
-        
+    
+    // MARK: Properties
+    weak var skipButton: UIButton? // Reference to button from Walkthrouth
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -60,6 +63,8 @@ class IntroViewController: UIViewController, BWWalkthroughViewControllerDelegate
         walkthrough.addViewController(page4)
         
         self.present(walkthrough, animated: true, completion: nil)
+    
+        skipButton = walkthrough.closeButton
     }
     
     
@@ -67,6 +72,16 @@ class IntroViewController: UIViewController, BWWalkthroughViewControllerDelegate
     
     func walkthroughPageDidChange(_ pageNumber: Int) {
         print("Current Page \(pageNumber)")
+        
+        if (skipButton != nil) {
+        if pageNumber < 3 {
+            let title = NSLocalizedString("Skip", comment: "Skip intro")
+            skipButton?.setTitle(title, for: UIControlState.normal)
+        } else {
+            let title = NSLocalizedString("Begin", comment: "Begin using")
+            skipButton?.setTitle(title, for: UIControlState.normal)
+        }
+        }
     }
     
     func walkthroughCloseButtonPressed() {

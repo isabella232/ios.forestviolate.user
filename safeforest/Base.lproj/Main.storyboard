@@ -154,6 +154,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="closeButton" destination="ZkR-hw-fSn" id="CJD-Fm-yOI"/>
                         <outlet property="pageControl" destination="vAI-X7-djH" id="h26-kt-tt6"/>
                     </connections>
                 </viewController>
