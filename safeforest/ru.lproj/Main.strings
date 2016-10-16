@@ -1,0 +1,42 @@
+/* Class = "UISegmentedControl"; 05y-pc-Lik.segmentTitles[0] = "List"; ObjectID = "05y-pc-Lik"; */
+"05y-pc-Lik.segmentTitles[0]" = "Список";
+
+/* Class = "UISegmentedControl"; 05y-pc-Lik.segmentTitles[1] = "Map"; ObjectID = "05y-pc-Lik"; */
+"05y-pc-Lik.segmentTitles[1]" = "Карта";
+
+/* Class = "UILabel"; text = "Empty list"; ObjectID = "A5M-7J-77L"; */
+"A5M-7J-77L.text" = "Пустой список";
+
+/* Class = "UIViewController"; title = "Intro page 2"; ObjectID = "LqQ-hD-u3f"; */
+"LqQ-hD-u3f.title" = "Intro page 2";
+
+/* Class = "UILabel"; text = "Loaded by SecondViewController"; ObjectID = "NDk-cv-Gan"; */
+"NDk-cv-Gan.text" = "Loaded by SecondViewController";
+
+/* Class = "UILabel"; text = "This app is created by the World Wide Fund for Nature - WWF Russia, which protects environment of the Far East. If you are interested, you are willing to help, please visit us: taigastory.ru"; ObjectID = "TiE-7S-w6a"; */
+"TiE-7S-w6a.text" = "Это приложение создано Всемирным фондом дикой природы – WWF России, который охраняет природу Дальнего Востока. Если вам интересно, вы готовы помочь, зайдите к нам: taigastory.ru";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "ZkR-hw-fSn"; */
+"ZkR-hw-fSn.normalTitle" = "Пропустить";
+
+/* Class = "UILabel"; text = "«Safe forest» application is intended for those who like traveling, fishing, hunting - thoughtful and courageous people willing to lend a helping hand to the nature of the Russian Far East."; ObjectID = "daq-1B-vfx"; */
+"daq-1B-vfx.text" = "Если вы любите путешествия, рыбалку, охоту - это приложение «Сохраним лес» для вас - неравнодушных и мужественных людей, готовых протянуть руку помощи природе Дальнего востока России.";
+
+/* Class = "UIViewController"; title = "Intro page 3"; ObjectID = "kYt-s6-hU8"; */
+"kYt-s6-hU8.title" = "Intro page 3";
+
+/* Class = "UILabel"; text = "If you see a fire in the forest, illegal felling or illegal dumps, send a message. Supervisors of the Forestry Department and LesAviaOhrana will receive your message."; ObjectID = "po1-Xk-TPQ"; */
+"po1-Xk-TPQ.text" = "Если вы увидели в лесу пожар, незаконную рубку или несанкционированную свалку - отправьте сообщение. Ваш сигнал получат диспетчеры Управления лесного хозяйства и ЛесАвиаОхраны.";
+
+/* Class = "UIViewController"; title = "Intro page 1"; ObjectID = "s64-jU-Now"; */
+"s64-jU-Now.title" = "Intro page 1";
+
+/* Class = "UIViewController"; title = "Intro page 4"; ObjectID = "tpO-Sz-bjN"; */
+"tpO-Sz-bjN.title" = "Intro page 4";
+
+/* Class = "UILabel"; text = "Forest Rangers will go to extinguish the fire, detain forest poachers or look for culprits landfill. As soon as the measures to be taken, you will be immediately notified about it."; ObjectID = "xek-fv-ffv"; */
+"xek-fv-ffv.text" = "Лесные рейнджеры отправятся тушить пожар, задерживать лесных браконьеров или искать виновников свалки. Как только меры будут предприняты, вы тут же узнаете об этом.";
+
+/* Class = "UILabel"; text = "Second View"; ObjectID = "zEq-FU-wV5"; */
+"zEq-FU-wV5.text" = "Second View";
+

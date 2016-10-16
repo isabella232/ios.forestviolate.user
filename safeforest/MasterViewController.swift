@@ -42,8 +42,11 @@ class MasterViewController: UIViewController {
     func setupSegmentedControl() {
         // Configure Segmented Control
         segmentedControl.removeAllSegments()
-        segmentedControl.insertSegment(withTitle: "List", at: 0, animated: false)
-        segmentedControl.insertSegment(withTitle: "Map", at: 1, animated: false)
+        let listText = NSLocalizedString("List", comment: "List segment name")
+        let mapText = NSLocalizedString("Map", comment: "Map segment name")
+        
+        segmentedControl.insertSegment(withTitle: listText, at: 0, animated: false)
+        segmentedControl.insertSegment(withTitle: mapText, at: 1, animated: false)
         segmentedControl.addTarget(self, action: #selector(MasterViewController.selectionDidChange), for: .valueChanged)
         
         // Select First Segment

@@ -197,19 +197,13 @@
                                     <constraint firstAttribute="width" secondItem="sw8-5a-ced" secondAttribute="height" multiplier="1:1" id="WVE-05-NJ6"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="daq-1B-vfx">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daq-1B-vfx">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="daq-1B-vfx" secondAttribute="height" multiplier="263:180" id="5EU-9v-XH6"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">«Safe forest» application is intended for those who like traveling, fishing, hunting - thoughtful and courageous people willing to lend a helping hand to the nature of the Russian Far East.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="17" name=".SFNSText"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <string key="text">«Safe forest» application is intended for those who like traveling, fishing, hunting - thoughtful and courageous people willing to lend a helping hand to the nature of the Russian Far East.</string>
+                                <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -263,19 +257,13 @@
                                     <constraint firstAttribute="width" secondItem="uxN-PE-BwF" secondAttribute="height" multiplier="1:1" id="Vcm-eA-2Me"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po1-Xk-TPQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po1-Xk-TPQ">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="po1-Xk-TPQ" secondAttribute="height" multiplier="263:180" id="dOw-8n-KjY"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">If you see a fire in the forest, illegal felling or illegal dumps, send a message. Supervisors of the Forestry Department and LesAviaOhrana will receive your message.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="17" name=".SFNSText"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <string key="text">If you see a fire in the forest, illegal felling or illegal dumps, send a message. Supervisors of the Forestry Department and LesAviaOhrana will receive your message.</string>
+                                <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -311,19 +299,13 @@
                                     <constraint firstAttribute="width" secondItem="5sZ-4b-gPn" secondAttribute="height" multiplier="1:1" id="zg7-Pf-FT6"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xek-fv-ffv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xek-fv-ffv">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="xek-fv-ffv" secondAttribute="height" multiplier="263:180" id="kgt-2h-8O9"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Forest Rangers will go to extinguish the fire, detain forest poachers or look for culprits landfill. As soon as the measures to be taken, you will be immediately notified about it.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="17" name=".SFNSText"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <string key="text">Forest Rangers will go to extinguish the fire, detain forest poachers or look for culprits landfill. As soon as the measures to be taken, you will be immediately notified about it.</string>
+                                <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -359,19 +341,13 @@
                                     <constraint firstAttribute="width" secondItem="7Zv-sv-Ib6" secondAttribute="height" multiplier="1:1" id="K31-g3-Czv"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiE-7S-w6a">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiE-7S-w6a">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TiE-7S-w6a" secondAttribute="height" multiplier="263:180" id="Gcy-yO-KnW"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">This app is created by the World Wide Fund for Nature - WWF Russia, which protects environment of the Far East. If you are interested, you are willing to help, please visit us: taigastory.ru</string>
-                                        <attributes>
-                                            <font key="NSFont" size="17" name=".SFNSText"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <string key="text">This app is created by the World Wide Fund for Nature - WWF Russia, which protects environment of the Far East. If you are interested, you are willing to help, please visit us: taigastory.ru</string>
+                                <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
